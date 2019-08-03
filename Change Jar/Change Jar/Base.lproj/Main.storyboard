@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="home" customModule="Change_Jar" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Nj7-uW-nfX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="lrh-Gd-2Io"/>
+                                    <constraint firstAttribute="height" constant="896" id="uoE-al-auN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coin" translatesAutoresizingMaskIntoConstraints="NO" id="30w-aY-0iT">
+                                <rect key="frame" x="87" y="254" width="240" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="changeJar" translatesAutoresizingMaskIntoConstraints="NO" id="lvK-Vj-c1d">
+                                <rect key="frame" x="-73" y="344" width="560" height="298"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRq-fx-cdn">
+                                <rect key="frame" x="131" y="666" width="152" height="53"/>
+                                <color key="backgroundColor" red="0.99881130456924438" green="0.82014268636703491" blue="0.34994801878929138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                <state key="normal" title="Let's go">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wPW-yS-ccX" kind="presentation" id="llZ-TE-DS5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="30w-aY-0iT" secondAttribute="bottom" constant="549" id="8R1-WP-FVg"/>
+                            <constraint firstItem="30w-aY-0iT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="DbJ-N5-dgf"/>
+                            <constraint firstItem="GRq-fx-cdn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="IBL-HK-bX2"/>
+                            <constraint firstItem="GRq-fx-cdn" firstAttribute="centerX" secondItem="Nj7-uW-nfX" secondAttribute="centerX" id="It8-ov-41X"/>
+                            <constraint firstItem="lvK-Vj-c1d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="231" id="Lf8-Wn-Yyk"/>
+                            <constraint firstItem="30w-aY-0iT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="PSt-mD-TdH"/>
+                            <constraint firstItem="GRq-fx-cdn" firstAttribute="centerX" secondItem="lvK-Vj-c1d" secondAttribute="centerX" id="QHM-xT-gHl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GRq-fx-cdn" secondAttribute="bottom" constant="208" id="UYm-0v-cQ3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lvK-Vj-c1d" secondAttribute="bottom" constant="289" id="cN8-1E-4Xb"/>
+                            <constraint firstItem="30w-aY-0iT" firstAttribute="centerX" secondItem="lvK-Vj-c1d" secondAttribute="centerX" id="gNx-vb-7En"/>
+                            <constraint firstItem="GRq-fx-cdn" firstAttribute="top" secondItem="lvK-Vj-c1d" secondAttribute="bottom" constant="28" id="hci-SE-5uS"/>
+                            <constraint firstItem="30w-aY-0iT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jN5-s9-ToA"/>
+                            <constraint firstItem="lvK-Vj-c1d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-93" id="tam-2d-yqA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="letsGoButton" destination="GRq-fx-cdn" id="wRk-RA-Jlx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+        <!--Intro1-->
+        <scene sceneID="EQZ-gU-VY5">
+            <objects>
+                <viewController id="wPW-yS-ccX" customClass="intro1" customModule="Change_Jar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tDF-jg-3v9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="intro1.1" translatesAutoresizingMaskIntoConstraints="NO" id="dDU-hJ-eUf">
+                                <rect key="frame" x="-181" y="215" width="776" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="You donate what you can in 10 cent chunks - we'll do the rest, and donate 100% of proceeds to meaningful charities" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iju-3R-BCL">
+                                <rect key="frame" x="68" y="506" width="279" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84096330159999999" green="0.86143926339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="WMp-AL-GuO"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aYe-N7-Yf8" appends="YES" id="2bH-0C-QyH"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAS-Kq-Jat" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="aYe-N7-Yf8">
+                    <connections>
+                        <action selector="swipeLeft:" destination="wPW-yS-ccX" id="hdj-KN-A1E"/>
+                        <outlet property="delegate" destination="dDU-hJ-eUf" id="Ikn-Gd-206"/>
+                        <segue destination="uM8-pr-r74" kind="presentation" identifier="intro2" modalTransitionStyle="crossDissolve" id="DOB-FU-qsM"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="734.78260869565224" y="20.758928571428569"/>
+        </scene>
+        <!--Intro2-->
+        <scene sceneID="OL1-l7-Qfh">
+            <objects>
+                <viewController id="uM8-pr-r74" customClass="intro2" customModule="Change_Jar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G94-Z6-te9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro1.2" translatesAutoresizingMaskIntoConstraints="NO" id="ksH-w6-lfv">
+                                <rect key="frame" x="-181" y="215" width="776" height="413"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="776" id="12u-1a-Kab"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="We pick the charities for now, but in the future, YOU get to choose!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7aq-bV-gpY">
+                                <rect key="frame" x="68" y="503" width="279" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87942617779999999" green="0.89863535679999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ksH-w6-lfv" firstAttribute="centerX" secondItem="G94-Z6-te9" secondAttribute="centerX" id="A6e-8h-M7K"/>
+                            <constraint firstItem="ksH-w6-lfv" firstAttribute="top" secondItem="7mj-2C-S5G" secondAttribute="top" constant="171" id="gkV-Qu-cVn"/>
+                            <constraint firstItem="7mj-2C-S5G" firstAttribute="bottom" secondItem="ksH-w6-lfv" secondAttribute="bottom" constant="234" id="sRU-Xx-VwG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7mj-2C-S5G"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qv5-yT-OeS" appends="YES" id="lOG-XY-CKI"/>
+                            <outletCollection property="gestureRecognizers" destination="tAC-tl-1ns" appends="YES" id="a6b-oS-xER"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQO-f3-SdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="qv5-yT-OeS">
+                    <connections>
+                        <action selector="swipeLeft:" destination="uM8-pr-r74" id="WzW-Jm-ghH"/>
+                        <segue destination="Uqt-GL-2co" kind="presentation" identifier="intro3" modalTransitionStyle="crossDissolve" id="brO-Qa-cxA"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="tAC-tl-1ns">
+                    <connections>
+                        <action selector="swipeRight:" destination="uM8-pr-r74" id="aFj-rC-cPC"/>
+                        <segue destination="wPW-yS-ccX" kind="presentation" identifier="intro1" modalTransitionStyle="crossDissolve" id="IDg-lY-wVS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1410" y="21"/>
+        </scene>
+        <!--Intro3-->
+        <scene sceneID="oi2-uT-aZV">
+            <objects>
+                <viewController id="Uqt-GL-2co" customClass="intro3" customModule="Change_Jar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4pu-ED-oEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro1.3" translatesAutoresizingMaskIntoConstraints="NO" id="GXT-HB-sWY">
+                                <rect key="frame" x="-181" y="215" width="776" height="413"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="776" id="XPg-VE-uE2"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ready to try? First dollar is on us." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kjR-Jr-vbf">
+                                <rect key="frame" x="68" y="501" width="279" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awy-zG-AjS">
+                                <rect key="frame" x="131" y="549" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign in with Apple Pay"/>
+                                <connections>
+                                    <segue destination="86K-2A-wJ2" kind="presentation" id="c0J-WY-nLj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84096330159999999" green="0.86143926339999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="mec-0d-yXe" firstAttribute="bottom" secondItem="GXT-HB-sWY" secondAttribute="bottom" constant="234" id="1ZH-uW-FQr"/>
+                            <constraint firstItem="GXT-HB-sWY" firstAttribute="centerX" secondItem="4pu-ED-oEQ" secondAttribute="centerX" id="Dwd-3u-kny"/>
+                            <constraint firstItem="GXT-HB-sWY" firstAttribute="top" secondItem="mec-0d-yXe" secondAttribute="top" constant="171" id="wVR-9w-Nlh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mec-0d-yXe"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8rd-qd-noE" appends="YES" id="wgX-6K-BuK"/>
+                            <outletCollection property="gestureRecognizers" destination="hhI-7C-KJY" appends="YES" id="Rsk-9O-pBe"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z1b-Dl-OXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="8rd-qd-noE">
+                    <connections>
+                        <action selector="swipeRight:" destination="Uqt-GL-2co" id="8GN-OH-Mbh"/>
+                        <segue destination="uM8-pr-r74" kind="presentation" identifier="intro2" modalTransitionStyle="crossDissolve" id="Lm5-52-V4v"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="hhI-7C-KJY">
+                    <connections>
+                        <segue destination="86K-2A-wJ2" kind="presentation" identifier="startFlicking" id="sbY-f4-JET"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2065" y="19"/>
+        </scene>
+        <!--Flick Coin-->
+        <scene sceneID="p2L-42-6FG">
+            <objects>
+                <viewController id="86K-2A-wJ2" customClass="flickCoin" customModule="Change_Jar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uD9-nf-cvl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbW-1A-x6a">
+                                <rect key="frame" x="131" y="704" width="152" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92826045859999995" green="0.80003173179999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Flick coin"/>
+                                <connections>
+                                    <action selector="loadOrganizations:" destination="86K-2A-wJ2" eventType="touchUpInside" id="So4-L3-V8c"/>
+                                    <segue destination="mNJ-kp-dda" kind="presentation" modalTransitionStyle="crossDissolve" id="Nqa-Yd-LEk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2Ak-wB-abN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCH-jq-HHc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2702.898550724638" y="18.75"/>
+        </scene>
+        <!--OrganizationsViewController-->
+        <scene sceneID="KOL-nP-pT6">
+            <objects>
+                <viewController storyboardIdentifier="OrganizationsViewController" id="Tgs-Ym-CAy" userLabel="OrganizationsViewController" customClass="OrganizationsViewController" customModule="Change_Jar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l4q-za-Evr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWt-0Z-bSv" customClass="PopupView">
+                                <rect key="frame" x="20" y="212" width="374" height="472"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcb-FO-Veu">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="83"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="🙌 Organization of the Week 🙌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2d-zd-ppW">
+                                                <rect key="frame" x="12" y="25" width="351" height="32"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.2958606481552124" green="0.14635920524597168" blue="0.7009548544883728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="l2d-zd-ppW" firstAttribute="centerX" secondItem="hcb-FO-Veu" secondAttribute="centerX" id="fLT-Rv-qOb"/>
+                                            <constraint firstItem="l2d-zd-ppW" firstAttribute="centerY" secondItem="hcb-FO-Veu" secondAttribute="centerY" id="qZm-2I-3jn"/>
+                                            <constraint firstItem="l2d-zd-ppW" firstAttribute="top" secondItem="hcb-FO-Veu" secondAttribute="top" constant="25" id="rqw-7p-OGz"/>
+                                            <constraint firstItem="l2d-zd-ppW" firstAttribute="leading" secondItem="hcb-FO-Veu" secondAttribute="leading" constant="12" id="s5p-bh-7Ha"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalCentering" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QSB-PA-ckg">
+                                        <rect key="frame" x="40" y="128" width="294" height="264"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planned Parenthood" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKO-jh-wd1">
+                                                <rect key="frame" x="0.5" y="0.0" width="293.5" height="42"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-TJ-DkG">
+                                                <rect key="frame" x="0.0" y="66" width="294" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Planned Parenthood Federation of America, Inc. (PPFA), or Planned Parenthood, is a nonprofit organization that provides reproductive health care in the United States and globally.
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bR7-Sy-LID">
+                                                <rect key="frame" x="47" y="214" width="200" height="50"/>
+                                                <color key="backgroundColor" red="0.99881130460000001" green="0.82014268639999999" blue="0.34994801879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="Yz2-2w-K2b"/>
+                                                    <constraint firstAttribute="height" constant="50" id="bqK-4e-dGf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                                <state key="normal" title="start flicking">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="mNJ-kp-dda" kind="presentation" modalTransitionStyle="crossDissolve" id="0dO-Bb-fg0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="264" id="B5G-xL-Kvx"/>
+                                            <constraint firstItem="bR7-Sy-LID" firstAttribute="top" secondItem="8sU-TJ-DkG" secondAttribute="bottom" constant="20" id="ItD-Sr-PPA"/>
+                                            <constraint firstItem="8sU-TJ-DkG" firstAttribute="leading" secondItem="QSB-PA-ckg" secondAttribute="leading" id="UoF-FB-HYq"/>
+                                            <constraint firstAttribute="width" constant="294" id="iyh-wA-vAG"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hcb-FO-Veu" firstAttribute="top" secondItem="iWt-0Z-bSv" secondAttribute="top" id="1XQ-SU-U2C"/>
+                                    <constraint firstItem="QSB-PA-ckg" firstAttribute="top" secondItem="hcb-FO-Veu" secondAttribute="bottom" constant="45" id="CSU-p6-boi"/>
+                                    <constraint firstItem="QSB-PA-ckg" firstAttribute="top" secondItem="iWt-0Z-bSv" secondAttribute="top" constant="128" id="KF5-7Z-x1x"/>
+                                    <constraint firstItem="hcb-FO-Veu" firstAttribute="leading" secondItem="iWt-0Z-bSv" secondAttribute="leading" id="TDJ-ZR-PdB"/>
+                                    <constraint firstItem="QSB-PA-ckg" firstAttribute="centerX" secondItem="hcb-FO-Veu" secondAttribute="centerX" id="VEu-h6-e5J"/>
+                                    <constraint firstItem="QSB-PA-ckg" firstAttribute="centerX" secondItem="iWt-0Z-bSv" secondAttribute="centerX" id="WNB-lH-Hc7"/>
+                                    <constraint firstAttribute="bottom" secondItem="QSB-PA-ckg" secondAttribute="bottom" constant="80" id="jab-MA-CYv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.63144798801369872" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iWt-0Z-bSv" firstAttribute="centerY" secondItem="l4q-za-Evr" secondAttribute="centerY" id="0nf-BQ-Kum"/>
+                            <constraint firstItem="iWt-0Z-bSv" firstAttribute="leading" secondItem="l4q-za-Evr" secondAttribute="leadingMargin" id="GLA-nP-kPR"/>
+                            <constraint firstItem="iWt-0Z-bSv" firstAttribute="trailing" secondItem="l4q-za-Evr" secondAttribute="trailingMargin" id="JW1-kk-i90"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dKP-Tn-JP6"/>
+                    </view>
+                    <connections>
+                        <outlet property="header" destination="hcb-FO-Veu" id="kGr-pt-QXV"/>
+                        <outlet property="popup" destination="iWt-0Z-bSv" id="jk0-oq-IzS"/>
+                        <outlet property="startFlickingButton" destination="bR7-Sy-LID" id="cZN-ui-4yc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGH-gQ-a9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3343.4782608695655" y="18.75"/>
+        </scene>
+        <!--Flicking Coins-->
+        <scene sceneID="ncJ-wY-CiH">
+            <objects>
+                <viewController id="mNJ-kp-dda" customClass="flickingCoins" customModule="Change_Jar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c7m-DZ-KBc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="stZ-Qp-GsW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-55-nfn">
+                                <rect key="frame" x="145" y="724" width="125" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="temp">
+                                    <color key="titleColor" red="0.99881130460000001" green="0.82014268639999999" blue="0.34994801879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadOrganizations:" destination="mNJ-kp-dda" eventType="touchUpInside" id="Goq-nc-0b4"/>
+                                    <segue destination="Tgs-Ym-CAy" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="ghd-Av-v3z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lR8-Mb-FCX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMi-lE-XVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3343" y="877"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="812"/>
+        <image name="changeJar" width="301" height="383"/>
+        <image name="coin" width="109" height="173"/>
+        <image name="intro1.1" width="507" height="641"/>
+        <image name="intro1.2" width="508" height="641"/>
+        <image name="intro1.3" width="507" height="641"/>
+        <image name="placeholder" width="372" height="808"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Nqa-Yd-LEk"/>
+        <segue reference="sbY-f4-JET"/>
+        <segue reference="DOB-FU-qsM"/>
+        <segue reference="llZ-TE-DS5"/>
+    </inferredMetricsTieBreakers>
+</document>

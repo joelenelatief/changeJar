@@ -1,0 +1,6 @@
+framework module Pods_Change_JarUITests {
+  umbrella header "Pods-Change JarUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
