@@ -28,10 +28,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coin" translatesAutoresizingMaskIntoConstraints="NO" id="30w-aY-0iT">
                                 <rect key="frame" x="87" y="254" width="240" height="128"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="changeJar" translatesAutoresizingMaskIntoConstraints="NO" id="lvK-Vj-c1d">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="changeJar" translatesAutoresizingMaskIntoConstraints="NO" id="lvK-Vj-c1d">
                                 <rect key="frame" x="-73" y="344" width="560" height="298"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRq-fx-cdn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRq-fx-cdn">
                                 <rect key="frame" x="131" y="666" width="152" height="53"/>
                                 <color key="backgroundColor" red="0.99881130456924438" green="0.82014268636703491" blue="0.34994801878929138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
@@ -45,17 +45,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GRq-fx-cdn" secondAttribute="bottom" constant="143" id="1sM-Rl-i5c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="30w-aY-0iT" secondAttribute="bottom" constant="549" id="8R1-WP-FVg"/>
                             <constraint firstItem="30w-aY-0iT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="DbJ-N5-dgf"/>
-                            <constraint firstItem="GRq-fx-cdn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="IBL-HK-bX2"/>
-                            <constraint firstItem="GRq-fx-cdn" firstAttribute="centerX" secondItem="Nj7-uW-nfX" secondAttribute="centerX" id="It8-ov-41X"/>
-                            <constraint firstItem="lvK-Vj-c1d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="231" id="Lf8-Wn-Yyk"/>
+                            <constraint firstItem="lvK-Vj-c1d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="Lf8-Wn-Yyk"/>
+                            <constraint firstItem="GRq-fx-cdn" firstAttribute="top" secondItem="lvK-Vj-c1d" secondAttribute="bottom" constant="24" id="ObT-5V-cUH"/>
                             <constraint firstItem="30w-aY-0iT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="PSt-mD-TdH"/>
-                            <constraint firstItem="GRq-fx-cdn" firstAttribute="centerX" secondItem="lvK-Vj-c1d" secondAttribute="centerX" id="QHM-xT-gHl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GRq-fx-cdn" secondAttribute="bottom" constant="208" id="UYm-0v-cQ3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lvK-Vj-c1d" secondAttribute="bottom" constant="289" id="cN8-1E-4Xb"/>
+                            <constraint firstItem="GRq-fx-cdn" firstAttribute="centerX" secondItem="Nj7-uW-nfX" secondAttribute="centerX" id="WeC-3i-h5h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lvK-Vj-c1d" secondAttribute="bottom" constant="220" id="cN8-1E-4Xb"/>
+                            <constraint firstItem="GRq-fx-cdn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="dpd-Ge-pkS"/>
                             <constraint firstItem="30w-aY-0iT" firstAttribute="centerX" secondItem="lvK-Vj-c1d" secondAttribute="centerX" id="gNx-vb-7En"/>
-                            <constraint firstItem="GRq-fx-cdn" firstAttribute="top" secondItem="lvK-Vj-c1d" secondAttribute="bottom" constant="28" id="hci-SE-5uS"/>
+                            <constraint firstItem="GRq-fx-cdn" firstAttribute="centerX" secondItem="lvK-Vj-c1d" secondAttribute="centerX" id="h3P-Iq-rWn"/>
                             <constraint firstItem="30w-aY-0iT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jN5-s9-ToA"/>
                             <constraint firstItem="lvK-Vj-c1d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-93" id="tam-2d-yqA"/>
                         </constraints>
@@ -348,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGH-gQ-a9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3343.4782608695655" y="18.75"/>
+            <point key="canvasLocation" x="3701" y="-37"/>
         </scene>
         <!--Flicking Coins-->
         <scene sceneID="ncJ-wY-CiH">
@@ -369,7 +369,7 @@
                                     <color key="titleColor" red="0.99881130460000001" green="0.82014268639999999" blue="0.34994801879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="loadOrganizations:" destination="mNJ-kp-dda" eventType="touchUpInside" id="Goq-nc-0b4"/>
+                                    <action selector="showQuip:" destination="mNJ-kp-dda" eventType="touchUpInside" id="cL9-ZQ-POz"/>
                                     <segue destination="Tgs-Ym-CAy" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="ghd-Av-v3z"/>
                                 </connections>
                             </button>
@@ -380,7 +380,106 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMi-lE-XVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3343" y="877"/>
+            <point key="canvasLocation" x="3007" y="776"/>
+        </scene>
+        <!--QuipViewController-->
+        <scene sceneID="xb9-Vo-ap1">
+            <objects>
+                <viewController storyboardIdentifier="QuipViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3PE-JA-cim" userLabel="QuipViewController" customClass="QuipViewController" customModule="Change_Jar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MVS-CW-Nte">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHX-Q0-XB1" customClass="PopupView">
+                                <rect key="frame" x="20" y="212" width="374" height="472"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xf7-2P-zag">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="83"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="🙌 Organization of the Week 🙌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZx-5D-szZ">
+                                                <rect key="frame" x="12" y="25" width="351" height="32"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.29586064820000002" green="0.14635920520000001" blue="0.70095485449999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="cZx-5D-szZ" firstAttribute="top" secondItem="Xf7-2P-zag" secondAttribute="top" constant="25" id="RVA-sh-EXa"/>
+                                            <constraint firstItem="cZx-5D-szZ" firstAttribute="centerX" secondItem="Xf7-2P-zag" secondAttribute="centerX" id="m9f-8Q-x9C"/>
+                                            <constraint firstItem="cZx-5D-szZ" firstAttribute="centerY" secondItem="Xf7-2P-zag" secondAttribute="centerY" id="rAz-or-GCV"/>
+                                            <constraint firstItem="cZx-5D-szZ" firstAttribute="leading" secondItem="Xf7-2P-zag" secondAttribute="leading" constant="12" id="yDh-ZB-9AV"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalCentering" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LB3-tn-Vbz">
+                                        <rect key="frame" x="40" y="128" width="294" height="264"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="quip!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRP-ck-Ove">
+                                                <rect key="frame" x="109.5" y="0.0" width="75" height="42"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="quippy quip" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zP1-UD-tDI">
+                                                <rect key="frame" x="0.0" y="66" width="294" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7n2-W5-cou">
+                                                <rect key="frame" x="47" y="214" width="200" height="50"/>
+                                                <color key="backgroundColor" red="0.99881130460000001" green="0.82014268639999999" blue="0.34994801879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="dib-OL-KLB"/>
+                                                    <constraint firstAttribute="width" constant="200" id="j50-Vq-lt3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                                <state key="normal" title="start flicking">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="264" id="09y-TO-YXb"/>
+                                            <constraint firstItem="7n2-W5-cou" firstAttribute="top" secondItem="zP1-UD-tDI" secondAttribute="bottom" constant="20" id="4zq-du-Tpo"/>
+                                            <constraint firstItem="zP1-UD-tDI" firstAttribute="leading" secondItem="LB3-tn-Vbz" secondAttribute="leading" id="FWv-Qm-iyl"/>
+                                            <constraint firstAttribute="width" constant="294" id="pa2-zc-rlW"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="LB3-tn-Vbz" firstAttribute="centerX" secondItem="Xf7-2P-zag" secondAttribute="centerX" id="3r1-8D-rbz"/>
+                                    <constraint firstItem="LB3-tn-Vbz" firstAttribute="top" secondItem="pHX-Q0-XB1" secondAttribute="top" constant="128" id="4EP-mI-7im"/>
+                                    <constraint firstItem="Xf7-2P-zag" firstAttribute="leading" secondItem="pHX-Q0-XB1" secondAttribute="leading" id="7PI-uW-Vn3"/>
+                                    <constraint firstItem="Xf7-2P-zag" firstAttribute="top" secondItem="pHX-Q0-XB1" secondAttribute="top" id="KzX-5b-k3y"/>
+                                    <constraint firstItem="LB3-tn-Vbz" firstAttribute="top" secondItem="Xf7-2P-zag" secondAttribute="bottom" constant="45" id="eDm-hX-R2R"/>
+                                    <constraint firstItem="LB3-tn-Vbz" firstAttribute="centerX" secondItem="pHX-Q0-XB1" secondAttribute="centerX" id="h9m-TP-6ew"/>
+                                    <constraint firstAttribute="bottom" secondItem="LB3-tn-Vbz" secondAttribute="bottom" constant="80" id="lgh-Vv-A8h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.63144798800000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pHX-Q0-XB1" firstAttribute="centerY" secondItem="MVS-CW-Nte" secondAttribute="centerY" id="gku-fn-Yi8"/>
+                            <constraint firstItem="pHX-Q0-XB1" firstAttribute="leading" secondItem="MVS-CW-Nte" secondAttribute="leadingMargin" id="rXv-xx-T6z"/>
+                            <constraint firstItem="pHX-Q0-XB1" firstAttribute="trailing" secondItem="MVS-CW-Nte" secondAttribute="trailingMargin" id="yed-NO-mXQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xdl-Hv-pmj"/>
+                    </view>
+                    <connections>
+                        <outlet property="header" destination="Xf7-2P-zag" id="LCY-vd-PuT"/>
+                        <outlet property="organizationDescription" destination="zP1-UD-tDI" id="QGA-ru-ySl"/>
+                        <outlet property="organizationTitle" destination="hRP-ck-Ove" id="c2z-4A-gOR"/>
+                        <outlet property="popup" destination="pHX-Q0-XB1" id="Wtt-mE-3Ke"/>
+                        <outlet property="quipText" destination="zP1-UD-tDI" id="DZ5-Iw-zyO"/>
+                        <outlet property="quipTitle" destination="hRP-ck-Ove" id="scg-d4-jC1"/>
+                        <outlet property="startFlickingButton" destination="7n2-W5-cou" id="OyJ-Zc-mLJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFq-kw-5qn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4348" y="-38"/>
         </scene>
     </scenes>
     <resources>
@@ -393,6 +492,7 @@
         <image name="placeholder" width="372" height="808"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ghd-Av-v3z"/>
         <segue reference="0dO-Bb-fg0"/>
         <segue reference="sbY-f4-JET"/>
         <segue reference="DOB-FU-qsM"/>

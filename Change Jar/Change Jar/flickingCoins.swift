@@ -8,16 +8,19 @@
 
 import UIKit
 import Alamofire
-
+var count = 0
 class flickingCoins: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        if (count == 0) {
+        self.loadOrganizations(self)
+        }
     }
     
-    @IBAction func loadOrganizations(_ sender: Any) {
+    func loadOrganizations(_ sender: Any) {
+        count = 1
         Alamofire.request(API_HOST+"/orgs/get_org").responseJSON { response in
             print("Request: \(String(describing: response.request))")   // original url request
             print("Response: \(String(describing: response.response))") // http url response
@@ -38,8 +41,13 @@ class flickingCoins: UIViewController {
             }
             
             let organizations = self.storyboard?.instantiateViewController(withIdentifier:"OrganizationsViewController") as! OrganizationsViewController
-            self.present(organizations, animated: true, completion: nil)
-            
-        }
+            self.present(organizations, animated: true, completion: nil) }
+        
+    }
+    
+    @IBAction func showQuip(_ sender: Any) {
+            let quip = self.storyboard?.instantiateViewController(withIdentifier:"QuipViewController") as! QuipViewController
+            self.present(quip, animated: true, completion: nil)
     }
 }
+

@@ -17,6 +17,7 @@
 		4E0C777522ECB76B00565BB7 /* 4778-coin.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E0C777422ECB76A00565BB7 /* 4778-coin.json */; };
 		4E371C7022F3C41100492CF0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E371C6F22F3C41100492CF0 /* Profile.storyboard */; };
 		4E371C7222F3C82C00492CF0 /* flickingCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E371C7122F3C82C00492CF0 /* flickingCoins.swift */; };
+		4E371C7422F60A0C00492CF0 /* QuipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E371C7322F60A0C00492CF0 /* QuipViewController.swift */; };
 		4EB9E60622F2A759004AFBC8 /* Organizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB9E60522F2A759004AFBC8 /* Organizations.swift */; };
 		4EB9E60822F2A81E004AFBC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB9E60722F2A81E004AFBC8 /* Constants.swift */; };
 		4EB9E60A22F2A8CB004AFBC8 /* OrganizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB9E60922F2A8CB004AFBC8 /* OrganizationsViewController.swift */; };
@@ -58,6 +59,7 @@
 		4E0C777422ECB76A00565BB7 /* 4778-coin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "4778-coin.json"; path = "Assets.xcassets/4778-coin.json"; sourceTree = "<group>"; };
 		4E371C6F22F3C41100492CF0 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		4E371C7122F3C82C00492CF0 /* flickingCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flickingCoins.swift; sourceTree = "<group>"; };
+		4E371C7322F60A0C00492CF0 /* QuipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuipViewController.swift; sourceTree = "<group>"; };
 		4EB9E60522F2A759004AFBC8 /* Organizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organizations.swift; sourceTree = "<group>"; };
 		4EB9E60722F2A81E004AFBC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4EB9E60922F2A8CB004AFBC8 /* OrganizationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationsViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				4E075EFA22E3849D00827210 /* intro3.swift */,
 				FB7B23B122D5ABBF00703CD1 /* Main.storyboard */,
 				4E371C7122F3C82C00492CF0 /* flickingCoins.swift */,
+				4E371C7322F60A0C00492CF0 /* QuipViewController.swift */,
 				4E371C6F22F3C41100492CF0 /* Profile.storyboard */,
 				4E0C777422ECB76A00565BB7 /* 4778-coin.json */,
 				4E075F0222E3A57A00827210 /* Assets.xcassets */,
@@ -429,6 +432,7 @@
 			files = (
 				4E075EF922E3848100827210 /* intro2.swift in Sources */,
 				4E371C7222F3C82C00492CF0 /* flickingCoins.swift in Sources */,
+				4E371C7422F60A0C00492CF0 /* QuipViewController.swift in Sources */,
 				FB7B23AE22D5ABBF00703CD1 /* AppDelegate.swift in Sources */,
 				4EB9E60622F2A759004AFBC8 /* Organizations.swift in Sources */,
 				4E075EF722E3845F00827210 /* intro1.swift in Sources */,
