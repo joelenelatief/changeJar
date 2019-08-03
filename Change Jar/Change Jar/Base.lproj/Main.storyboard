@@ -340,6 +340,8 @@
                     </view>
                     <connections>
                         <outlet property="header" destination="hcb-FO-Veu" id="kGr-pt-QXV"/>
+                        <outlet property="organizationDescription" destination="8sU-TJ-DkG" id="YSh-YM-Fyi"/>
+                        <outlet property="organizationTitle" destination="WKO-jh-wd1" id="fWO-5g-9au"/>
                         <outlet property="popup" destination="iWt-0Z-bSv" id="jk0-oq-IzS"/>
                         <outlet property="startFlickingButton" destination="bR7-Sy-LID" id="cZN-ui-4yc"/>
                     </connections>
@@ -391,7 +393,7 @@
         <image name="placeholder" width="372" height="808"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Nqa-Yd-LEk"/>
+        <segue reference="0dO-Bb-fg0"/>
         <segue reference="sbY-f4-JET"/>
         <segue reference="DOB-FU-qsM"/>
         <segue reference="llZ-TE-DS5"/>

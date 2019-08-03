@@ -10,6 +10,8 @@ import UIKit
 
 class OrganizationsViewController: UIViewController {
     
+    @IBOutlet var organizationTitle: UILabel!
+    @IBOutlet var organizationDescription: UITextView!
     @IBOutlet var header: UIView!
     @IBOutlet var popup: UIView!
     @IBOutlet var startFlickingButton: UIButton!
@@ -17,6 +19,9 @@ class OrganizationsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        organizationTitle.text = UserDefaults.standard.string(forKey: "orgName")
+        organizationDescription.text = UserDefaults.standard.string(forKey: "orgDescription")
+        
         popup.layer.cornerRadius = 20
         
         header.layer.cornerRadius = 20
