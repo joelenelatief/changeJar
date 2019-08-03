@@ -41,13 +41,13 @@ class flickingCoins: UIViewController {
             }
             
             let organizations = self.storyboard?.instantiateViewController(withIdentifier:"OrganizationsViewController") as! OrganizationsViewController
-            self.present(organizations, animated: true, completion: nil) }
-        
-    }
-    
-    @IBAction func showQuip(_ sender: Any) {
-            let quip = self.storyboard?.instantiateViewController(withIdentifier:"QuipViewController") as! QuipViewController
-            self.present(quip, animated: true, completion: nil)
+            organizations.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+            self.present(organizations, animated: true, completion: nil)
     }
 }
-
+    @IBAction func showQuip(_ sender: Any) {
+        let quip = self.storyboard?.instantiateViewController(withIdentifier:"QuipViewController") as! QuipViewController
+        self.present(quip, animated: true, completion: nil)
+    }
+    
+}

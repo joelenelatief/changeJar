@@ -28,6 +28,10 @@
         header.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         startFlickingButton.layer.cornerRadius = 20
         startFlickingButton.clipsToBounds = true
+        popup.layer.shadowColor = UIColor.black.cgColor
+        popup.layer.shadowOpacity = 0.3
+        popup.layer.shadowOffset = .zero
+        popup.layer.shadowRadius = 10
         
     }
  }

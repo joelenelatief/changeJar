@@ -369,8 +369,8 @@
                                     <color key="titleColor" red="0.99881130460000001" green="0.82014268639999999" blue="0.34994801879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="showQuip:" destination="mNJ-kp-dda" eventType="touchUpInside" id="cL9-ZQ-POz"/>
-                                    <segue destination="Tgs-Ym-CAy" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="ghd-Av-v3z"/>
+                                    <action selector="showQuip:" destination="mNJ-kp-dda" eventType="touchUpInside" id="XMV-tZ-KJY"/>
+                                    <segue destination="3PE-JA-cim" kind="presentation" modalTransitionStyle="crossDissolve" id="amz-3W-Xqm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -396,14 +396,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xf7-2P-zag">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="83"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="🙌 Organization of the Week 🙌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZx-5D-szZ">
-                                                <rect key="frame" x="12" y="25" width="351" height="32"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="wooooooooooõ 🥳" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZx-5D-szZ">
+                                                <rect key="frame" x="83" y="25" width="210" height="32"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.29586064820000002" green="0.14635920520000001" blue="0.70095485449999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.14526403855899553" green="0.82417909263959388" blue="0.67202248246512342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="cZx-5D-szZ" firstAttribute="top" secondItem="Xf7-2P-zag" secondAttribute="top" constant="25" id="RVA-sh-EXa"/>
                                             <constraint firstItem="cZx-5D-szZ" firstAttribute="centerX" secondItem="Xf7-2P-zag" secondAttribute="centerX" id="m9f-8Q-x9C"/>
@@ -433,8 +433,8 @@
                                                     <constraint firstAttribute="height" constant="50" id="dib-OL-KLB"/>
                                                     <constraint firstAttribute="width" constant="200" id="j50-Vq-lt3"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
-                                                <state key="normal" title="start flicking">
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                                <state key="normal" title="onwards">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
@@ -469,8 +469,6 @@
                     </view>
                     <connections>
                         <outlet property="header" destination="Xf7-2P-zag" id="LCY-vd-PuT"/>
-                        <outlet property="organizationDescription" destination="zP1-UD-tDI" id="QGA-ru-ySl"/>
-                        <outlet property="organizationTitle" destination="hRP-ck-Ove" id="c2z-4A-gOR"/>
                         <outlet property="popup" destination="pHX-Q0-XB1" id="Wtt-mE-3Ke"/>
                         <outlet property="quipText" destination="zP1-UD-tDI" id="DZ5-Iw-zyO"/>
                         <outlet property="quipTitle" destination="hRP-ck-Ove" id="scg-d4-jC1"/>
@@ -479,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFq-kw-5qn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4348" y="-38"/>
+            <point key="canvasLocation" x="4801" y="493"/>
         </scene>
     </scenes>
     <resources>
@@ -492,7 +490,6 @@
         <image name="placeholder" width="372" height="808"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ghd-Av-v3z"/>
         <segue reference="0dO-Bb-fg0"/>
         <segue reference="sbY-f4-JET"/>
         <segue reference="DOB-FU-qsM"/>
