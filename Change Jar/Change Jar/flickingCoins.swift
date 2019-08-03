@@ -25,6 +25,12 @@ class flickingCoins: UIViewController {
             
             if let json = response.result.value {
                 print("HELLO I AM JSON: \(json)") // serialized json response
+                let JSON = jsonResults as! NSDictionary
+                print(JSON)
+                let name = JSON["name"]
+                let description = JSON["description"]
+                UserDefaults.standard.set(name, forKey: "orgName")
+                UserDefaults.standard.set(description, forKey: "orgDescription")
             }
             
             if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
